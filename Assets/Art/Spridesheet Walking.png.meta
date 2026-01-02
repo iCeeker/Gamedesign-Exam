@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 585899cc0ca3ac74d82a2c42f7ee8547
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1346479367654115133
+    second: Spridesheet Walking_0
+  - first:
+      213: 3085268596095849450
+    second: Spridesheet Walking_1
+  - first:
+      213: 9095849175868210346
+    second: Spridesheet Walking_2
+  - first:
+      213: -8081551698414188874
+    second: Spridesheet Walking_3
+  - first:
+      213: 1190406579595720788
+    second: Spridesheet Walking_4
+  - first:
+      213: -4920147532524316601
+    second: Spridesheet Walking_5
+  - first:
+      213: -1837068286944815030
+    second: Spridesheet Walking_6
+  - first:
+      213: 8373383969551589436
+    second: Spridesheet Walking_7
+  - first:
+      213: 6390668160755416345
+    second: Spridesheet Walking_8
+  - first:
+      213: 1716763411507257739
+    second: Spridesheet Walking_9
+  - first:
+      213: 4001060206718125102
+    second: Spridesheet Walking_10
+  - first:
+      213: -9087344478895710875
+    second: Spridesheet Walking_11
+  - first:
+      213: 2253927259872968573
+    second: Spridesheet Walking_12
+  - first:
+      213: -7312728113648414939
+    second: Spridesheet Walking_13
+  - first:
+      213: -6067683668544160991
+    second: Spridesheet Walking_14
+  - first:
+      213: 5734077409394531376
+    second: Spridesheet Walking_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spridesheet Walking_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1522
+        width: 346
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d378a66d9d7afa210800000000000000
+      internalID: 1346479367654115133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_1
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1522
+        width: 350
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae316f2117311da20800000000000000
+      internalID: 3085268596095849450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_2
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1524
+        width: 355
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac772232a2fa3e70800000000000000
+      internalID: 9095849175868210346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1048
+        width: 346
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b641165c8f88df80800000000000000
+      internalID: -8081551698414188874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_4
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1029
+        width: 346
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45837132a7c258010800000000000000
+      internalID: 1190406579595720788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_5
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1029
+        width: 346
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7489f5123ef18bbb0800000000000000
+      internalID: -4920147532524316601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_6
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1019
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48d480502c6186e0800000000000000
+      internalID: -1837068286944815030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_7
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1019
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30a2113b5c343470800000000000000
+      internalID: 8373383969551589436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 563
+        width: 346
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91db93f35d630b850800000000000000
+      internalID: 6390668160755416345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_9
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 553
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81274a1a3b23d710800000000000000
+      internalID: 1716763411507257739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 563
+        width: 346
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24826a3f0f968730800000000000000
+      internalID: 4001060206718125102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_11
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 553
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d50dfd75443e180800000000000000
+      internalID: -9087344478895710875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_12
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 580
+        width: 346
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f3c4aa6ee874f10800000000000000
+      internalID: 2253927259872968573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_13
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 96
+        width: 346
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f49fe6688f38a90800000000000000
+      internalID: -7312728113648414939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_14
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 96
+        width: 350
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b7cf6f9d14bcba0800000000000000
+      internalID: -6067683668544160991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spridesheet Walking_15
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 105
+        width: 355
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c9d8df509839f40800000000000000
+      internalID: 5734077409394531376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spridesheet Walking_0: 1346479367654115133
+      Spridesheet Walking_1: 3085268596095849450
+      Spridesheet Walking_10: 4001060206718125102
+      Spridesheet Walking_11: -9087344478895710875
+      Spridesheet Walking_12: 2253927259872968573
+      Spridesheet Walking_13: -7312728113648414939
+      Spridesheet Walking_14: -6067683668544160991
+      Spridesheet Walking_15: 5734077409394531376
+      Spridesheet Walking_2: 9095849175868210346
+      Spridesheet Walking_3: -8081551698414188874
+      Spridesheet Walking_4: 1190406579595720788
+      Spridesheet Walking_5: -4920147532524316601
+      Spridesheet Walking_6: -1837068286944815030
+      Spridesheet Walking_7: 8373383969551589436
+      Spridesheet Walking_8: 6390668160755416345
+      Spridesheet Walking_9: 1716763411507257739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
