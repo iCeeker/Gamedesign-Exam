@@ -15,9 +15,8 @@ public class InteractionChecker : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
-        
         if (other.TryGetComponent(out IInteraction interaction) && interaction.IsInteractable()) // looking for IInteraction and checking if it's interactable, if yes, activate the indicator
+                                                                                                 // (need this, because we have a trigger map border for camera check)
         {
             interactionInRange = interaction;
             interactionObject.SetActive(true);
@@ -26,9 +25,9 @@ public class InteractionChecker : MonoBehaviour
     
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.TryGetComponent(out IInteraction interaction)) // after leaving the range, we're turning off the indicator
+        if (other.TryGetComponent(out IInteraction interaction) && interaction == interactionInRange) // after leaving the range, we're turning off the indicator
         {
-            interactionInRange = interaction;
+            interactionInRange = null;
             interactionObject.SetActive(false);
         }
     }
@@ -38,11 +37,7 @@ public class InteractionChecker : MonoBehaviour
         if (context.performed)
         {
             interactionInRange?.Interact(); // if the object is in range of the set interaction range zone, we're starting to interact
+            interactionObject.SetActive(false); // Disable the interaction icon, since we can no longer interact (mostly using this because 99% of our stuff will be one shots)
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log(other.gameObject.name);
     }
 }

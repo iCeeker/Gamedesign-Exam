@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fc21c61f-1540-48e6-b7f5-cf0f68ff4f11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player_Input_8D.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player_Input_8D.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Skript/InteractionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/InteractionChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/ItemInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/ItemInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,8 @@
       <workItem from="1769631429300" duration="1463000" />
       <workItem from="1769636603307" duration="54000" />
       <workItem from="1769638704096" duration="1678000" />
-      <workItem from="1770135777566" duration="8000" />
+      <workItem from="1770135777493" duration="7444000" />
+      <workItem from="1770152552361" duration="5150000" />
     </task>
     <servers />
   </component>
