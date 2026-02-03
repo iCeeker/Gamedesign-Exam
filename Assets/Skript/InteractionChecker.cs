@@ -9,12 +9,14 @@ public class InteractionChecker : MonoBehaviour
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
+    { 
         interactionObject.SetActive(false);
     }
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.name);
+        
         if (other.TryGetComponent(out IInteraction interaction) && interaction.IsInteractable()) // looking for IInteraction and checking if it's interactable, if yes, activate the indicator
         {
             interactionInRange = interaction;
@@ -37,5 +39,10 @@ public class InteractionChecker : MonoBehaviour
         {
             interactionInRange?.Interact(); // if the object is in range of the set interaction range zone, we're starting to interact
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(other.gameObject.name);
     }
 }
