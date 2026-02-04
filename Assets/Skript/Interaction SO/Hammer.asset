@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Item
   itemName: Hammer
   type: 2
-  amount: 0
+  amount: 1
   pickupSound: {fileID: 0}

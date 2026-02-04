@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SO_Item
   itemName: Plank
   type: 0
-  amount: 0
+  amount: 3
   pickupSound: {fileID: 0}

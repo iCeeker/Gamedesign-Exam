@@ -14436,7 +14436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableInteraction
   tracker: {fileID: 725091503}
-  item: {fileID: 11400000, guid: 8b183a3ba8c857e4592df82c6fd9aaa4, type: 2}
+  soItem: {fileID: 11400000, guid: 8b183a3ba8c857e4592df82c6fd9aaa4, type: 2}
 --- !u!212 &489673713
 SpriteRenderer:
   serializedVersion: 2
@@ -15893,13 +15893,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05c86adb8ed77d14e93d616952bf6bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectionTracker
-  plankAmount: 0
-  nailAmount: 0
-  hammerAmount: 0
   requiredPlankAmount: 0
   requiredNailAmount: 0
   requiredHammerAmount: 0
   barrierGameObject: {fileID: 646018586}
+  plankAmount: 0
+  nailAmount: 0
+  hammerAmount: 0
 --- !u!114 &731661971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17849,7 +17849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableInteraction
   tracker: {fileID: 725091503}
-  item: {fileID: 11400000, guid: ed585e36950f378489163a726a01e24c, type: 2}
+  soItem: {fileID: 11400000, guid: ed585e36950f378489163a726a01e24c, type: 2}
 --- !u!212 &1115931561
 SpriteRenderer:
   serializedVersion: 2
@@ -19573,7 +19573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   tracker: {fileID: 0}
-  item: {fileID: 0}
+  soItem: {fileID: 0}
 --- !u!114 &1418403134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35325,7 +35325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableInteraction
   tracker: {fileID: 725091503}
-  item: {fileID: 11400000, guid: a067d8ee4d8557b4fb1c455027029e14, type: 2}
+  soItem: {fileID: 11400000, guid: a067d8ee4d8557b4fb1c455027029e14, type: 2}
 --- !u!212 &1841968670
 SpriteRenderer:
   serializedVersion: 2
