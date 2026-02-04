@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fc21c61f-1540-48e6-b7f5-cf0f68ff4f11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Skript/CollectableInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/CollectableInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skript/CollectionTracker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/CollectionTracker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <workItem from="1769638704096" duration="1678000" />
       <workItem from="1770135777493" duration="7444000" />
       <workItem from="1770152552361" duration="10680000" />
-      <workItem from="1770198559507" duration="1376000" />
+      <workItem from="1770198559507" duration="2602000" />
     </task>
     <servers />
   </component>

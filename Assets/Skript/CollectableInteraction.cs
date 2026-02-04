@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CollectableInteraction : MonoBehaviour, IInteraction
@@ -5,16 +6,24 @@ public class CollectableInteraction : MonoBehaviour, IInteraction
     
     [SerializeField] CollectionTracker tracker;
     [SerializeField] private SO_Item soItem;
+    [SerializeField] private AudioSource gameManager;
     
     private bool hasBeenInteracted = false;
     
     /* Start Find Gameobject that collects the data of the amount of collected collectables
      * On Interact, increase the amount of collectable depending on the type of collectable
      * delete this game object
-     */ 
+     */
+
+    public void Start()
+    {
+        gameManager = GetComponent<AudioSource>();
+    }
+
     public void Interact()
     { 
         IncreaseItemAmount();
+        gameManager.PlayOneShot(soItem.pickupSound);
        this.gameObject.SetActive(false);
     }
 
