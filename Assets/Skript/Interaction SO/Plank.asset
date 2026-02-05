@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Plank
   type: 0
   amount: 3
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 91cca4831f3128849b65889d215b2ab8, type: 3}

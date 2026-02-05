@@ -14,11 +14,7 @@ public class CollectableInteraction : MonoBehaviour, IInteraction
      * On Interact, increase the amount of collectable depending on the type of collectable
      * delete this game object
      */
-
-    public void Start()
-    {
-        gameManager = GetComponent<AudioSource>();
-    }
+    
 
     public void Interact()
     { 

@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Nail
   type: 1
   amount: 2
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: d952fe130d63c5b4ab9af1f2f79c3533, type: 3}

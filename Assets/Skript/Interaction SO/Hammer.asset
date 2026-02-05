@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Hammer
   type: 2
   amount: 1
-  pickupSound: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 905335baacf502a4a92556dd816859d4, type: 3}
