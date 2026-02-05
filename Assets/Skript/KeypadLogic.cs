@@ -1,15 +1,19 @@
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeypadLogic : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI screen;
     [SerializeField] private string codeWord;
+    [SerializeField] private int codeLength;
+    [SerializeField] private GameObject keypad;
+    [SerializeField] private int sceneNumber;
 
     public void AddNumber(string number)
     {
-        if (screen.text.Length <= 5)
+        if (screen.text.Length <= codeLength -1 )
         {
             screen.text += number;
         }
@@ -24,6 +28,8 @@ public class KeypadLogic : MonoBehaviour
     {
         if (screen.text == codeWord)
         {
+            keypad.SetActive(false);
+            SceneManager.LoadScene(sceneNumber);
             Debug.Log("Correct Code");
         }
         else
@@ -31,6 +37,4 @@ public class KeypadLogic : MonoBehaviour
             Debug.Log("Wrong Code");
         }
     }
-    
-    
 }

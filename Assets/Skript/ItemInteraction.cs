@@ -18,6 +18,11 @@ public class ItemInteraction : MonoBehaviour, IInteraction
     {
         if (interactedItem != null)
         {
+            if (interactionObject.activeSelf == true)
+            {
+                interactionObject.SetActive(false);
+            }
+            
             interactedItem.SetActive(true);
             hasBeenInteracted = true;
             

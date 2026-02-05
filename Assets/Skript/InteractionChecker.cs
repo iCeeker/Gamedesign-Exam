@@ -32,7 +32,7 @@ public class InteractionChecker : MonoBehaviour
         }
     }
 
-    public void OnInteraction(InputAction.CallbackContext context) // on pressing the callback context key (in our case the F key) we're interacting
+    public void OnInteraction(InputAction.CallbackContext context) // on pressing the callback context key (in our case the E key) we're interacting
     {
         if (context.performed)
         {

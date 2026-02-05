@@ -6,7 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="fc21c61f-1540-48e6-b7f5-cf0f68ff4f11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skript/CollectableInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/CollectableInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Backgrounds/IMG_3865.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Backgrounds/IMG_3865.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/Dialog1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/Dialog1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/InteractionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/InteractionChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/ItemInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/ItemInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/KeypadLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/KeypadLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/Start Button.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/Start Button.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +60,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="G:\Unity\6000.3.2f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="G:\Unity\6000.3.2f1-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath G:\UnityProjects\GamedesignExam\Gamedesign-Exam -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="G:\UnityProjects\GamedesignExam\Gamedesign-Exam" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -57,7 +71,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="G:\Unity\6000.3.2f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="G:\Unity\6000.3.2f1-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath G:\UnityProjects\GamedesignExam\Gamedesign-Exam -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="G:\UnityProjects\GamedesignExam\Gamedesign-Exam" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -112,7 +126,10 @@
       <workItem from="1769638704096" duration="1678000" />
       <workItem from="1770135777493" duration="7444000" />
       <workItem from="1770152552361" duration="10680000" />
-      <workItem from="1770198559507" duration="2602000" />
+      <workItem from="1770198559507" duration="2700000" />
+      <workItem from="1770233276339" duration="1757000" />
+      <workItem from="1770284544056" duration="1153000" />
+      <workItem from="1770322464519" duration="4753000" />
     </task>
     <servers />
   </component>
