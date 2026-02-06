@@ -10,6 +10,8 @@ public class CollectionTracker : MonoBehaviour
 
     [SerializeField] private GameObject barrierGameObject;
     
+    public bool meetsRequirements;
+    
     public int plankAmount;
     public int nailAmount;
     public int hammerAmount;
@@ -18,22 +20,26 @@ public class CollectionTracker : MonoBehaviour
     {
         if (plankAmount <= requiredPlankAmount)
         {
+            meetsRequirements = false;
             // Give Player Info that you need more Planks
         }
 
         if (nailAmount <= requiredNailAmount)
         {
+            meetsRequirements = false;
             // Give Player Info that you need more Nails
         }
 
         if (hammerAmount <= requiredHammerAmount)
         {
+            meetsRequirements = false;
             // Give Player Info that you need more Hammers
         }
 
         if (plankAmount >= requiredPlankAmount && nailAmount >= requiredNailAmount &&
             hammerAmount >= requiredHammerAmount)
         {
+            meetsRequirements = true;
             barrierGameObject.SetActive(false);
         }
     }
