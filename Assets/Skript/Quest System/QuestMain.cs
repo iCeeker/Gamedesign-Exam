@@ -57,30 +57,6 @@ public class QuestMain : MonoBehaviour
             QuestGameObjects[questGameObjectsCounter].gameObject.SetActive(true);
             questIsCompleted = true;
         }
-        
-        /*
-        if (QuestTypesList[currentQuestIndex].needsQuestObject && QuestTypesList[currentQuestIndex].questType != QuestType.Collection )
-        {
-            QuestGameObjects[questGameObjectsCounter].gameObject.SetActive(false);
-
-            questGameObjectsCounter++;
-
-            QuestGameObjects[questGameObjectsCounter].gameObject.SetActive(true);
-            questIsCompleted = true;
-        }
-       else if (QuestTypesList[currentQuestIndex].needsQuestObject && QuestTypesList[currentQuestIndex].questType != QuestType.Collection)
-        {
-            QuestGameObjects[questGameObjectsCounter].gameObject.SetActive(true);
-            questGameObjectsCounter++;
-            questIsCompleted = true;
-        }
-
-        if (QuestTypesList[currentQuestIndex].needsQuestObject &&
-            QuestTypesList[currentQuestIndex].questType == QuestType.Collection && collectionTracker.meetsRequirements)
-        {
-            questIsCompleted = true;
-        }
-        */
 
         if (questIsCompleted)
         {
@@ -91,10 +67,9 @@ public class QuestMain : MonoBehaviour
         }
     }
 
-    private void Update() // temp check, need to implement a way that it doesn't check ever frame if we complete a quest
+    private void Update() // temp check, need to implement a way that it doesn't check every frame if we complete a quest
     {
         SetActiveQuest();
     }
     
-    // Need an "Next Object" from SO that activates 
 }
