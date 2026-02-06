@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
   questDescription: ABC
   questNumber: 0
+  questType: 0
+  questObject: {fileID: 0}

@@ -11,10 +11,10 @@ public class QuestReach : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && questMain.currentQuestIndex == quest.questNumber) // create  new lists with NPC's, Items & Reach zones. Populate those with each with EVERYTHING we want to interact with
-                                                                                            // create an int that ++ if you interact with the object 
+        if (other.CompareTag("Player"))
+                                                                                           
         {
-            questMain.CompleteQuest();
+            questMain.CompleteQuest(); 
             Destroy(gameObject);
         }
     }

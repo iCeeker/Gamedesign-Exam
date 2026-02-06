@@ -13,5 +13,5 @@ public class SO_Quest : ScriptableObject
      public string questDescription;
      public int questNumber;
      public QuestType questType;
-     public GameObject questGameObject;
+     public GameObject questObject; // Doesn't work on active scene objects
 }
