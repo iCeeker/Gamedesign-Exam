@@ -9,6 +9,7 @@ public class CollectionTracker : MonoBehaviour
     [SerializeField] private int requiredHammerAmount;
 
     [SerializeField] private GameObject barrierGameObject;
+    [SerializeField] private QuestMain questMain;
     
     public bool meetsRequirements;
     
@@ -39,10 +40,15 @@ public class CollectionTracker : MonoBehaviour
         if (plankAmount >= requiredPlankAmount && nailAmount >= requiredNailAmount &&
             hammerAmount >= requiredHammerAmount)
         {
+            Debug.Log("Found all items");
             meetsRequirements = true;
+            
             barrierGameObject.SetActive(false);
+             questMain.CompleteQuest();
+            // Todo: Switch this to an npc 
         }
     }
+    
 
     /* Create Different Ints
      * function that increases the amount collected ++

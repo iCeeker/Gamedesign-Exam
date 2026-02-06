@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7eac21c661893548916e782b8a0755d, type: 3}
   m_Name: Quest_4
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
-  questDescription: XYZ
-  questNumber: 1
+  questType: 2
+  questDescription: I NOM U
+  questNumber: 3
+  needsQuestObject: 1

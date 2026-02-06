@@ -10,8 +10,8 @@ public enum QuestType
 [CreateAssetMenu(fileName = "SO_Quest", menuName = "Scriptable Objects/SO_Quest")]
 public class SO_Quest : ScriptableObject
 {
+     public QuestType questType;
      public string questDescription;
      public int questNumber;
-     public QuestType questType;
-     public GameObject questObject; // Doesn't work on active scene objects
+     public bool needsQuestObject;
 }

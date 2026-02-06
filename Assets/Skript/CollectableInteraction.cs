@@ -47,5 +47,7 @@ public class CollectableInteraction : MonoBehaviour, IInteraction
             tracker.nailAmount =+ soItem.amount;
             // return feedback via txt that you found a nail
         }
+        
+        tracker.CheckRequirements();
     }
 }

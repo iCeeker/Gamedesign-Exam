@@ -12,10 +12,10 @@ public class QuestReach : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-                                                                                           
+
         {
-            questMain.CompleteQuest(); 
-            Destroy(gameObject);
+            questMain.CompleteQuest();
+            gameObject.SetActive(false);
         }
     }
 }
