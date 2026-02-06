@@ -426,10 +426,10 @@ TextureImporter:
       name: IMG_4093_5
       rect:
         serializedVersion: 2
-        x: 2213
-        y: 1669
-        width: 135
-        height: 135
+        x: 2059
+        y: 1674
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,10 +448,10 @@ TextureImporter:
       name: IMG_4093_6
       rect:
         serializedVersion: 2
-        x: 2362
-        y: 1669
-        width: 294
-        height: 135
+        x: 2366
+        y: 1675
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: IMG_4093_7
       rect:
         serializedVersion: 2
-        x: 2669
-        y: 1669
-        width: 135
-        height: 135
+        x: 2671
+        y: 1675
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,10 +492,10 @@ TextureImporter:
       name: IMG_4093_8
       rect:
         serializedVersion: 2
-        x: 3379
-        y: 1502
-        width: 295
-        height: 295
+        x: 3384
+        y: 1508
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +668,10 @@ TextureImporter:
       name: IMG_4093_16
       rect:
         serializedVersion: 2
-        x: 2213
-        y: 1362
-        width: 136
-        height: 296
+        x: 2058
+        y: 1368
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,10 +690,10 @@ TextureImporter:
       name: IMG_4093_17
       rect:
         serializedVersion: 2
-        x: 2362
-        y: 1363
-        width: 293
-        height: 294
+        x: 2367
+        y: 1367
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,10 +712,10 @@ TextureImporter:
       name: IMG_4093_18
       rect:
         serializedVersion: 2
-        x: 2669
-        y: 1363
-        width: 136
-        height: 296
+        x: 2675
+        y: 1369
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,10 +866,10 @@ TextureImporter:
       name: IMG_4093_25
       rect:
         serializedVersion: 2
-        x: 2213
-        y: 1268
-        width: 135
-        height: 83
+        x: 2058
+        y: 1063
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -888,10 +888,10 @@ TextureImporter:
       name: IMG_4093_26
       rect:
         serializedVersion: 2
-        x: 2362
-        y: 1268
-        width: 294
-        height: 83
+        x: 2366
+        y: 1060
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -910,10 +910,10 @@ TextureImporter:
       name: IMG_4093_27
       rect:
         serializedVersion: 2
-        x: 2670
-        y: 1268
-        width: 135
-        height: 83
+        x: 2678
+        y: 1061
+        width: 284
+        height: 284
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
