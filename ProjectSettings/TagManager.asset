@@ -18,7 +18,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -43,6 +43,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Map High
+    uniqueID: 3610620387
+    locked: 0
+  - name: Player
+    uniqueID: 179910849
+    locked: 0
+  - name: Map Low
+    uniqueID: 3902082789
+    locked: 0
+  - name: 'Map Ground '
+    uniqueID: 2843850369
     locked: 0
   m_RenderingLayers:
   - Default
