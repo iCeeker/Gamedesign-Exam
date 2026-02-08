@@ -206,6 +206,34 @@
             "bindings": []
         },
         {
+            "name": "MiniGame",
+            "id": "a3a360f6-38a3-4507-94ae-83fef7213a6b",
+            "actions": [
+                {
+                    "name": "RepeatedInput",
+                    "type": "Button",
+                    "id": "389b6749-0dbd-4c3b-adea-ab20641035d9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "229c2e88-c320-44b3-b112-2e277a0e5661",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RepeatedInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "UI",
             "id": "272f6d14-89ba-496f-b7ff-215263d3219f",
             "actions": [

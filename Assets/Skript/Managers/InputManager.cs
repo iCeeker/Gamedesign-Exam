@@ -5,6 +5,7 @@ public class InputManager : MonoBehaviour
 {
     private static InputManager instance;
     private bool submitPressed = false;
+    private bool repeatedInput = false;
 
     void Awake()
     {
@@ -33,6 +34,30 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public void RepeatedInput(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            repeatedInput = true;
+        }
+        else if (context.canceled)
+        {
+            repeatedInput = false;
+        }
+    }
+
+    public bool RepeatedInput()
+    {
+        bool result = repeatedInput;
+        repeatedInput = false;
+        return result;
+    }
+    
+    public void RegisterRepeatedInput()
+    {
+        repeatedInput = false;
+    }
+    
     public bool SubmitPressed()
     {
         bool result = submitPressed;
