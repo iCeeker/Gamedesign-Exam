@@ -1,3 +1,5 @@
+using System;
+using UnityEditor;
 using UnityEngine;
 
 public class ItemInteraction : MonoBehaviour, IInteraction
@@ -8,7 +10,7 @@ public class ItemInteraction : MonoBehaviour, IInteraction
     private bool hasBeenInteracted = false;
     
     [SerializeField] private CheckState checkState;
- 
+    
     public bool IsInteractable()
     {
         return !hasBeenInteracted;
@@ -24,7 +26,7 @@ public class ItemInteraction : MonoBehaviour, IInteraction
             }
             
             interactedItem.SetActive(true);
-            hasBeenInteracted = true;
+         //   hasBeenInteracted = true;
             
             checkState.ActivateItemMap();
         }

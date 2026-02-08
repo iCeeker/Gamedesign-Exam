@@ -183,6 +183,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "CloseDialogue",
+                    "type": "Button",
+                    "id": "e76a0010-8724-4c6c-9846-740f18186960",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -196,14 +205,47 @@
                     "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6264987f-2693-4226-896e-a650c41243ba",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseDialogue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
         {
             "name": "Item",
             "id": "05d9760b-33eb-4523-8bba-50d7580186fa",
-            "actions": [],
-            "bindings": []
+            "actions": [
+                {
+                    "name": "CloseApplication",
+                    "type": "Button",
+                    "id": "2cb27a5b-98ba-47f9-bd1c-dd06c3d4cbda",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d43da376-d29e-4ee7-9342-bb232300bf75",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseApplication",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         },
         {
             "name": "MiniGame",
@@ -213,6 +255,15 @@
                     "name": "RepeatedInput",
                     "type": "Button",
                     "id": "389b6749-0dbd-4c3b-adea-ab20641035d9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CloseApplication",
+                    "type": "Button",
+                    "id": "2c1e52dc-38ca-4697-8c86-ab30341ef069",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -228,6 +279,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "RepeatedInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ab6bf69-16a5-4b48-8eac-04be55f24de7",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CloseApplication",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

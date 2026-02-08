@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager instance;
     
     private Story currentStory;
-
+    
     public bool dialogueIsPlaying { get; private set; }
     
 
@@ -80,9 +80,9 @@ public class DialogueManager : MonoBehaviour
         ContinueStory(); 
     }
 
-    private IEnumerator ExitDialogue()
+    public void ExitDialogue()
     {
-        yield return new WaitForSeconds(0.3f);
+    //    yield return new WaitForSeconds(0.3f);
         
         dialogueIsPlaying = false;
         dialoguePrefab.SetActive(false);
@@ -100,7 +100,8 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(ExitDialogue());
+     //       StartCoroutine(ExitDialogue());
+            ExitDialogue();
         }
     }
 

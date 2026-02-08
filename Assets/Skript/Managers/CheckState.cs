@@ -53,7 +53,5 @@ public class CheckState : MonoBehaviour
         dialogueMap.Disable();
         itemMap.Disable();
         repeatedInputMap.Enable();
-        
     }
-    
 }

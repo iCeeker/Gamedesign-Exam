@@ -34,7 +34,7 @@ public class RepeatedInput : MonoBehaviour, IInteraction
     private void Awake()
     {
         slider.value = 0;
-         slider.maxValue = sliderGoal;
+        slider.maxValue = sliderGoal;
     }
 
     // Update is called once per frame
@@ -49,8 +49,7 @@ public class RepeatedInput : MonoBehaviour, IInteraction
     {
         miniGameobject.SetActive(true);
         checkState.ActivateRepeatedInputMap();
-        spaceButton.interactable = false;
-
+    //    spaceButton.interactable = false;
     }
 
     public bool IsInteractable()
@@ -92,7 +91,6 @@ public class RepeatedInput : MonoBehaviour, IInteraction
             audioSource.PlayOneShot(audioClip); // Playing a sound for our interaction like throwing something over
             
         }
-        
         checkState.ActivatePlayerMap();
     }
 }
