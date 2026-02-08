@@ -40,5 +40,10 @@ public class InputManager : MonoBehaviour
         return result;
     }
     
+    public void RegisterSubmitPressed() 
+    {
+        submitPressed = false;
+    }
+    
    
 }

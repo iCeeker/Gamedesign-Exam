@@ -9,6 +9,10 @@ public class DialogueManager : MonoBehaviour
 {
     // The Dialogue Manager controls everything that's related to dialogs.
     // Here we start, continue and end dialogs, add choices and also in a specific case add a certain value to the choice.
+    // Most of the fundamental logic was learned by following along this video https://www.youtube.com/watch?v=vY0Sk93YUhA. Credits where Credits are due!
+    
+    [SerializeField] private CheckState checkState;
+    
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePrefab;
     [SerializeField] private TextMeshProUGUI dialogueText;
@@ -23,8 +27,7 @@ public class DialogueManager : MonoBehaviour
     private Story currentStory;
 
     public bool dialogueIsPlaying { get; private set; }
-
-    [SerializeField] private CheckState checkState;
+    
 
     private void Awake()
     {
@@ -59,7 +62,7 @@ public class DialogueManager : MonoBehaviour
         if (!dialogueIsPlaying)
         {return;}
 
-        if (InputManager.GetInstance().SubmitPressed()) // we're checking if we have pressed the continue button (space)
+        if (currentStory.currentChoices.Count == 0 && InputManager.GetInstance().SubmitPressed()) // we're checking if we have pressed the continue button (space)
         {
             ContinueStory();
         }
@@ -77,8 +80,10 @@ public class DialogueManager : MonoBehaviour
         ContinueStory(); 
     }
 
-    private void ExitDialogue()
+    private IEnumerator ExitDialogue()
     {
+        yield return new WaitForSeconds(0.3f);
+        
         dialogueIsPlaying = false;
         dialoguePrefab.SetActive(false);
         dialogueText.text = "";
@@ -95,7 +100,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            ExitDialogue();
+            StartCoroutine(ExitDialogue());
         }
     }
 
@@ -136,5 +141,8 @@ public class DialogueManager : MonoBehaviour
     public void MakingAChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+        InputManager.GetInstance().RegisterSubmitPressed();
+        ContinueStory();
+        
     }
 }
