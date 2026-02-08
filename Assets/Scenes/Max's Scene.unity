@@ -19689,28 +19689,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1165665972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165665966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae72013db33d004d926b93cef06a0ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC_Patrol
-  patrolPoints:
-  - {x: 0, y: 0}
-  - {x: 0, y: 1}
-  - {x: 0, y: 0}
-  - {x: 0, y: -1}
-  target: {x: 0, y: 0}
-  speed: 3
-  pauseTime: 1.5
-  walksHorizontally: 0
-  walksVertically: 1
 --- !u!50 &1165665973
 Rigidbody2D:
   serializedVersion: 5
@@ -40012,9 +39990,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2672090554318438895, guid: e634e6437dfe90144b58037839f7e832, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1165665971}
-    - targetCorrespondingSourceObject: {fileID: 2672090554318438895, guid: e634e6437dfe90144b58037839f7e832, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1165665972}
   m_SourcePrefab: {fileID: 100100000, guid: e634e6437dfe90144b58037839f7e832, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

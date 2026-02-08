@@ -143,9 +143,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05783b35e6a0ca142aea6e74974ac487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  checkState: {fileID: 5979047745283999234}
   dialoguePrefab: {fileID: 0}
   dialogueText: {fileID: 0}
-  checkState: {fileID: 5979047745283999234}
+  choices:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4240596455546270709
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +355,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5c03d5ad-997a-4ebe-8b80-8076bfbc42f3
     m_ActionName: 'Dialogue/Submit[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: RepeatedInput, Assembly-CSharp
+        m_MethodName: IncreaseSliderValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 389b6749-0dbd-4c3b-adea-ab20641035d9
+    m_ActionName: 'MiniGame/RepeatedInput[/Keyboard/space]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
