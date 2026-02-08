@@ -8,6 +8,9 @@ public class NPC_Patrol : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float pauseTime;
 
+    [SerializeField] private bool walksHorizontally;
+    [SerializeField] private bool walksVertically;
+    
     private bool isPaused;
     private int patrolIndex;
     private Rigidbody2D rb;
@@ -31,11 +34,20 @@ public class NPC_Patrol : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             return;
         }
+        
+        
         Vector2 direction = ((Vector3)target - transform.position).normalized;
-        if (direction.x < 0 && transform.localScale.x > 0 || direction.x > 0 && transform.localScale.x < 0)
+        
+        if (direction.x < 0 && transform.localScale.x > 0 || direction.x > 0 && transform.localScale.x < 0 && walksHorizontally)
         {
-            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+            animator.Play("Move_Left");
         }
+        
+        if (direction.y < 0 && transform.localScale.y > 0 || direction.y > 0 && transform.localScale.y < 0 && walksVertically)
+        {
+            animator.Play("Move_Down");
+        }
+        
         
         rb.linearVelocity = direction * speed;
 
@@ -55,7 +67,15 @@ public class NPC_Patrol : MonoBehaviour
         patrolIndex = (patrolIndex + 1) % patrolPoints.Length;
         target = patrolPoints[patrolIndex];
         isPaused = false;
-        
-        animator.Play("Move_Right");
+
+        if (walksHorizontally)
+        {
+            animator.Play("Move_Right");
+        }
+
+        if (walksVertically)
+        {
+            animator.Play("Move_Up");
+        }
     }
 }
