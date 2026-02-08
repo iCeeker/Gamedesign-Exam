@@ -1,28 +1,19 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class NpcInteraction : MonoBehaviour, IInteraction
 {
     private bool hasBeenInteracted = false;
     [SerializeField] private TextAsset textAsset;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private DialogueManager dialogueManager;
 
     public void Interact()
-    {
-        Debug.Log(textAsset.text);
+    { 
+        Debug.Log("We Interacted");
+       DialogueManager.GetInstance().StartDialogue(textAsset);
     }
 
-    public bool IsInteractable()
+    public bool IsInteractable()    
     {
         return !hasBeenInteracted;
     }

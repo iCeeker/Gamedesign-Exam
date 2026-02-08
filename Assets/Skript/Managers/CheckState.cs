@@ -1,20 +1,43 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class CheckState : MonoBehaviour
 {
-    [SerializeField] private InputActionAsset playerInput;
 
-    public void DisablePlayerInput() // Maybe unify them into TogglePlayerInput and check if active == true, disable & viceversa
+    [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private DialogueManager dialogueManager;
+
+    private InputActionMap dialogueMap;
+    private InputActionMap playerMap;
+    private InputActionMap itemMap;
+    
+
+    private void Awake()
     {
-        Debug.Log("DisablePlayerInput");
-        playerInput.Disable();
+        dialogueMap = playerInput.actions.FindActionMap("Dialogue");
+        playerMap = playerInput.actions.FindActionMap("Player");
+        itemMap = playerInput.actions.FindActionMap("Item");
+    }
+    
+    public void ActivateDialogueMap()
+    {
+            dialogueMap.Enable();
+            playerMap.Disable();
     }
 
-    public void EnablePlayerInput()
+    public void ActivatePlayerMap()
     {
-        Debug.Log("EnablePlayerInput");
-        Debug.Log(playerInput.name);
-        playerInput.Enable();
+        playerMap.Enable();
+        dialogueMap.Disable();
     }
+
+    public void ActivateItemMap()
+    {
+        playerMap.Disable();
+        itemMap.Enable();
+        
+    }
+    
 }

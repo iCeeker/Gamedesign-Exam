@@ -26,7 +26,7 @@ public class ItemInteraction : MonoBehaviour, IInteraction
             interactedItem.SetActive(true);
             hasBeenInteracted = true;
             
-            checkState.DisablePlayerInput();
+            checkState.ActivateItemMap();
         }
         else { return; }
     }

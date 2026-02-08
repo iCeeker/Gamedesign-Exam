@@ -172,6 +172,40 @@
             ]
         },
         {
+            "name": "Dialogue",
+            "id": "288942c6-faaf-4187-8298-6383f199488c",
+            "actions": [
+                {
+                    "name": "Submit",
+                    "type": "Button",
+                    "id": "5c03d5ad-997a-4ebe-8b80-8076bfbc42f3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a4c706ca-b2ac-4392-84c2-bc4c18f35ce6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Item",
+            "id": "05d9760b-33eb-4523-8bba-50d7580186fa",
+            "actions": [],
+            "bindings": []
+        },
+        {
             "name": "UI",
             "id": "272f6d14-89ba-496f-b7ff-215263d3219f",
             "actions": [
