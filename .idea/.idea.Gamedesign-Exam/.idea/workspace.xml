@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fc21c61f-1540-48e6-b7f5-cf0f68ff4f11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamedesign-Exam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skript/Quest System/QuestMain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/Quest System/QuestMain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Player/NPC_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Player/NPC_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player_Input_8D.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player_Input_8D.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Max's Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/Managers/CheckState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/Managers/CheckState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Skript/Managers/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Skript/Managers/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +22,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Skript/InteractionChecker.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Skript/Movement_8D.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Skript/NPC_Patrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Skript/Quest System/QuestMain.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Skript/Quest System/QuestTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Skript/SO_Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@02433b2481ab/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -120,12 +125,15 @@
       <workItem from="1770322464519" duration="12347000" />
       <workItem from="1770343464826" duration="1161000" />
       <workItem from="1770383078828" duration="5290000" />
+      <workItem from="1770477001868" duration="26203000" />
+      <workItem from="1770561618151" duration="11322000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
