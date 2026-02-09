@@ -2441,7 +2441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &311677854
 Transform:
   m_ObjectHideFlags: 0
@@ -38710,9 +38710,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 861406567}
     - target: {fileID: 4328908259162359152, guid: 9755127f20826f34e9558a0d0fd3fd92, type: 3}
+      propertyPath: singleChoice
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328908259162359152, guid: 9755127f20826f34e9558a0d0fd3fd92, type: 3}
       propertyPath: dialoguePrefab
       value: 
       objectReference: {fileID: 4344254}
+    - target: {fileID: 4328908259162359152, guid: 9755127f20826f34e9558a0d0fd3fd92, type: 3}
+      propertyPath: singleChoiceText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4328908259162359152, guid: 9755127f20826f34e9558a0d0fd3fd92, type: 3}
       propertyPath: 'choices.Array.data[0]'
       value: 
@@ -38778,6 +38786,10 @@ PrefabInstance:
       propertyPath: pauseTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6597647421925831238, guid: e634e6437dfe90144b58037839f7e832, type: 3}
+      propertyPath: textAsset
+      value: 
+      objectReference: {fileID: 4900000, guid: a6191a624a9f29a489abff50b4f1ea43, type: 3}
     - target: {fileID: 6597647421925831238, guid: e634e6437dfe90144b58037839f7e832, type: 3}
       propertyPath: doesPatrol
       value: 1

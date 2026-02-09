@@ -1,0 +1,2 @@
+Heute wollte ich mich noch mit Armin treffen, er hatte irgendwas geplant, aber ging nicht weiter darauf ein. #Spieler
+Naja, ich sollte mich mal langsam auf den Weg machen, hoffentlich bin ich nicht zu spät. Er wartet sicher schon draußen... #Spieler

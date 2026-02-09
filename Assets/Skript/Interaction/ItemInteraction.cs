@@ -17,7 +17,7 @@ public class ItemInteraction : MonoBehaviour, IInteraction
     }
 
     public void Interact()
-    {
+    { 
         if (interactedItem != null)
         {
             if (interactionObject.activeSelf == true)
