@@ -371,6 +371,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 389b6749-0dbd-4c3b-adea-ab20641035d9
     m_ActionName: 'MiniGame/RepeatedInput[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4328908259162359152}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: ExitDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e76a0010-8724-4c6c-9846-740f18186960
+    m_ActionName: 'Dialogue/CloseDialogue[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8439867748397819718}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: CloseInteraction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2cb27a5b-98ba-47f9-bd1c-dd06c3d4cbda
+    m_ActionName: 'Item/CloseApplication[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8439867748397819718}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: CloseInteraction
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2c1e52dc-38ca-4697-8c86-ab30341ef069
+    m_ActionName: 'MiniGame/CloseApplication[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -388,6 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da92be11463962448ec2872a23b7be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  checkState: {fileID: 5979047745283999234}
 --- !u!1 &8978699660643630140
 GameObject:
   m_ObjectHideFlags: 0
