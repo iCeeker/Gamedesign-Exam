@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Max's Scene.unity
     guid: a2f4851305b792f43a4047bad0906251
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: f960a30bf5b658b4babf63c66d52005c
+  - enabled: 1
+    path: Assets/Scenes/Story_Scenes/Room_2.unity
+    guid: d40890ef11f444440afd6dc5b24c19f8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -44,16 +44,8 @@ public class CollectionTracker : MonoBehaviour
             meetsRequirements = true;
             
             barrierGameObject.SetActive(false);
-             questMain.CompleteQuest();
+            questMain.CompleteQuest();
             // Todo: Switch this to an npc 
         }
     }
-    
-
-    /* Create Different Ints
-     * function that increases the amount collected ++
-     * return feedback message
-     */
-
-
 }

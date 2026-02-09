@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7eac21c661893548916e782b8a0755d, type: 3}
   m_Name: Quest_2
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
-  questType: 2
-  questDescription: Reach Destination 2
+  questType: 0
+  questDescription: Collect Needed Materials
   questNumber: 1
   needsQuestObject: 1

@@ -1,11 +1,22 @@
 using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class ItemInteraction : MonoBehaviour, IInteraction
 {
     [SerializeField] private GameObject interactedItem;
-    [SerializeField] private GameObject interactionObject;
+    [SerializeField] private GameObject interactionIcon;
+    [SerializeField] private bool hasDialogue;
+    [SerializeField] private bool loadsScene;
+    [SerializeField] private string sceneName;
+    
+    [SerializeField] DialogueManager dialogueManager;
+    [SerializeField] TextAsset textAsset;
+    
+    [SerializeField] private QuestMain questMain;
+    [SerializeField] private bool isAQuest;
     
     private bool hasBeenInteracted = false;
     
@@ -17,18 +28,40 @@ public class ItemInteraction : MonoBehaviour, IInteraction
     }
 
     public void Interact()
-    { 
+    {
+        Debug.Log("Has Been interacted");
+        
+        if (hasDialogue == true)
+        {
+            Debug.Log("Has Dialogue");
+            dialogueManager.StartDialogue(textAsset);
+        }
+
+        if (hasDialogue && isAQuest)
+        {
+            dialogueManager.StartDialogue(textAsset);
+            questMain.CompleteQuest();
+        }
+
+        if (loadsScene)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        
         if (interactedItem != null)
         {
-            if (interactionObject.activeSelf == true)
+            if (interactionIcon.activeSelf == true)
             {
-                interactionObject.SetActive(false);
+                interactionIcon.SetActive(false);
             }
             
-            interactedItem.SetActive(true);
-         //   hasBeenInteracted = true;
+            {
+                Debug.Log("No Dialogue");
+                interactedItem.SetActive(true);
+                //   hasBeenInteracted = true;
             
-            checkState.ActivateItemMap();
+                checkState.ActivateItemMap();
+            }
         }
         else { return; }
     }

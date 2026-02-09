@@ -1,11 +1,14 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Movement_8D : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+   // [SerializeField] private CinemachineCamera cinemachineCamera; ToDo: on Start set this to follow player to avoid stuttering
     private Rigidbody2D rb; 
     private Vector2 moveInput;
+    
     
    [SerializeField] private float moveSpeed = 5f;
     

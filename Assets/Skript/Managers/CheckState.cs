@@ -18,6 +18,7 @@ public class CheckState : MonoBehaviour
     private InputActionMap playerMap;
     private InputActionMap itemMap;
     private InputActionMap repeatedInputMap;
+    private InputActionMap animationMap;
     
 
     private void Awake() 
@@ -26,6 +27,7 @@ public class CheckState : MonoBehaviour
         playerMap = playerInput.actions.FindActionMap("Player");
         itemMap = playerInput.actions.FindActionMap("Item");
         repeatedInputMap = playerInput.actions.FindActionMap("MiniGame");
+        animationMap = playerInput.actions.FindActionMap("Animation");
     }
     
     public void ActivateDialogueMap()
@@ -53,5 +55,13 @@ public class CheckState : MonoBehaviour
         dialogueMap.Disable();
         itemMap.Disable();
         repeatedInputMap.Enable();
+    }
+    
+    public void ActivateAnimationMap()
+    {
+        playerMap.Disable();
+        dialogueMap.Disable();
+        itemMap.Disable();
+        animationMap.Enable();
     }
 }

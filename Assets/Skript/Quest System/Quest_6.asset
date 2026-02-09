@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7eac21c661893548916e782b8a0755d, type: 3}
-  m_Name: Quest_4
+  m_Name: Quest_6
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
-  questType: 1
-  questDescription: Talk to the group
-  questNumber: 3
+  questType: 2
+  questDescription: Go back to the group
+  questNumber: 5
   needsQuestObject: 1

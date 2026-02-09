@@ -9,7 +9,7 @@ public class KeypadLogic : MonoBehaviour
     [SerializeField] private string codeWord;
     [SerializeField] private int codeLength;
     [SerializeField] private GameObject keypad;
-    [SerializeField] private int sceneNumber;
+    [SerializeField] private string sceneName;
 
     public void AddNumber(string number)
     {
@@ -29,7 +29,7 @@ public class KeypadLogic : MonoBehaviour
         if (screen.text == codeWord)
         {
             keypad.SetActive(false);
-            SceneManager.LoadScene(sceneNumber);
+            SceneManager.LoadScene(sceneName);
             Debug.Log("Correct Code");
         }
         else
