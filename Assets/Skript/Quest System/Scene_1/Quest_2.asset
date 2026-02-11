@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Quest_2
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
   questType: 0
-  questDescription: Collect Needed Materials
+  questDescription: "Sammel Materialien um die Br\xFCcke zu repairieren"
   questNumber: 1
   needsQuestObject: 1

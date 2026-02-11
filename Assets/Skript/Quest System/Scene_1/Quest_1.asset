@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Quest_1
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
   questType: 2
-  questDescription: Reach the Bridge
+  questDescription: "Triff dich mit Thomas auf der anderen Seite der Br\xFCcke"
   questNumber: 0
   needsQuestObject: 1

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Quest_5
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
   questType: 1
-  questDescription: Take a Beer
+  questDescription: Hol dir ein Bier
   questNumber: 4
   needsQuestObject: 1

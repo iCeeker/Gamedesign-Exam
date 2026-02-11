@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Quest_4
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
   questType: 1
-  questDescription: Talk to the group
+  questDescription: Stell dich der Gruppe vor
   questNumber: 3
   needsQuestObject: 1

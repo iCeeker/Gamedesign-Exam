@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Quest_7
   m_EditorClassIdentifier: Assembly-CSharp::QuestTypes
   questType: 1
-  questDescription: Interact with your door
+  questDescription: Gehe nach Hause
   questNumber: 6
   needsQuestObject: 1

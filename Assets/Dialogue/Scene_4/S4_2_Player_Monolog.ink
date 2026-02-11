@@ -1,1 +1,1 @@
-Oh, Thomas ist schon da, ich sollte ihn nicht warten lassen.# Spieler
+Ich sollte warten bis Thomas da ist# Spieler
