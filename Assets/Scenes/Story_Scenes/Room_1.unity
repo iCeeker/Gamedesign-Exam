@@ -6204,10 +6204,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc2732972b35914995fdc11a5f5fe24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
+  disableThis: 1
   dialogueManager: {fileID: 1541859051}
   textAsset: {fileID: 4900000, guid: cb8f9611c6853d3478c4db25a9dc110c, type: 3}
   checkState: {fileID: 1682624628}
   animator: {fileID: 0}
+  animFirst: 0
   hasAnimation: 0
   animDuraton: 0
   animTrigger: 
@@ -13203,6 +13205,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1489078352}
     - target: {fileID: 1785783593995756893, guid: 049b45aceb61e1a468e8109cf985c9d7, type: 3}
+      propertyPath: codeWord
+      value: 9528
+      objectReference: {fileID: 0}
+    - target: {fileID: 1785783593995756893, guid: 049b45aceb61e1a468e8109cf985c9d7, type: 3}
       propertyPath: errorCode
       value: 
       objectReference: {fileID: 1170368691}
@@ -13212,7 +13218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1785783593995756893, guid: 049b45aceb61e1a468e8109cf985c9d7, type: 3}
       propertyPath: codeLength
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1785783593995756893, guid: 049b45aceb61e1a468e8109cf985c9d7, type: 3}
       propertyPath: audioSource

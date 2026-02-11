@@ -83,11 +83,18 @@ public class ItemInteraction : MonoBehaviour, IInteraction
             questMain.CompleteQuest();
         }
 
-        if (loadsScene) // trigger to load a scene
+        if (loadsScene && !hasDialogue) // trigger to load a scene
         {
             PlayAudio();
             Debug.Log("Loading scene");
             SceneManager.LoadScene(sceneName);
+        }
+        
+        if (loadsScene && hasDialogue) // trigger to load a scene
+        {
+            PlayAudio();
+            StartCoroutine(WaitForDialog());
+            Debug.Log("Loading scene");
         }
         
         if (interactedItem != null && hasDialogue) // trigger when we want a dialogue first and then interact with the item
@@ -163,6 +170,13 @@ public class ItemInteraction : MonoBehaviour, IInteraction
         
         
         else { return; }
+    }
+
+    private IEnumerator WaitForDialog()
+    {
+        yield return new WaitUntil(() => !dialogueManager.dialogueIsPlaying);
+        
+        SceneManager.LoadScene(sceneName);
     }
 
     private IEnumerator OpenItemAfter()

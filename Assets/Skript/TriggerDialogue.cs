@@ -15,6 +15,7 @@ public class TriggerDialogue : MonoBehaviour
     
     [Header("Animation")]
     [SerializeField] private Animator animator;
+    [SerializeField] private bool animFirst;
     [SerializeField] private bool hasAnimation;
     [SerializeField] private int animDuraton;
     [SerializeField] private string animTrigger;
@@ -52,6 +53,12 @@ public class TriggerDialogue : MonoBehaviour
         {
             checkState.ActivateAnimationMap();
             StartCoroutine(DialogueToAnim());
+        }
+
+        if (!dialogueManager.dialogueIsPlaying && hasAnimation && animator != null && animFirst)
+        {
+            checkState.ActivateAnimationMap();
+            StartCoroutine(AnimToDialogue());
         }
     }
 

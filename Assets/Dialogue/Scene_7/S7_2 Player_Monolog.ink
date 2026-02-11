@@ -1,0 +1,1 @@
+Ich sollte nicht mehr raus, nicht, dass mich jemand erwischt. # Spieler

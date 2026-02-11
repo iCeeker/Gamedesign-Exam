@@ -12,9 +12,11 @@ public class RepeatedInput : MonoBehaviour
 {
     [Header("Other Objects & Scripts")]
     [SerializeField] private CheckState checkState;
+    [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private TextAsset textAsset;
     private InputAction action;
     [SerializeField] private AudioSource audioSource;
-    
+     
     [Header("UI + Gameobject")]
     [SerializeField] private Slider slider;
     [SerializeField] private GameObject miniGameobject;
@@ -57,7 +59,6 @@ public class RepeatedInput : MonoBehaviour
         
         if (miniGameobject.activeSelf == true)
         {
-            Debug.Log("Entered the if IncreaseSliderValue");
             /*
             spaceButton.interactable = true;
             spaceButton.onClick.Invoke();           // Tried to make a color transition but didnt work
@@ -89,5 +90,7 @@ public class RepeatedInput : MonoBehaviour
             
         }
         checkState.ActivatePlayerMap();
+        
+        dialogueManager.StartDialogue(textAsset);
     }
 }

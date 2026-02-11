@@ -11,6 +11,9 @@ public class WaitOnThomas : MonoBehaviour
     [SerializeField] private float waitTime;
     [SerializeField] private GameObject doorClosed; 
     [SerializeField] private GameObject doorOpen;
+    
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
 
     private void Awake()
     {
@@ -21,6 +24,7 @@ public class WaitOnThomas : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         
+        audioSource.PlayOneShot(audioClip);
         Debug.Log("Works");
         
         doorClosed.SetActive(false);
