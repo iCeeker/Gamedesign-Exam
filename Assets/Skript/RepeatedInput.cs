@@ -8,7 +8,7 @@ using UnityEngine.UI;
 // Game is beeing played by pressing space a number of times.
 // The challenge: The value constantly goes down, so you have to press space a lot!
 
-public class RepeatedInput : MonoBehaviour, IInteraction
+public class RepeatedInput : MonoBehaviour
 {
     [Header("Other Objects & Scripts")]
     [SerializeField] private CheckState checkState;
@@ -24,17 +24,23 @@ public class RepeatedInput : MonoBehaviour, IInteraction
     [SerializeField] private float sliderReduction;
     [SerializeField] private float sliderIncrease;
     [SerializeField] private float sliderGoal;
-    
-    [Header("Results of Objects")]
+
+    [Header("Results of Objects")] 
+    [SerializeField] private GameObject previousObject;
     [SerializeField] private GameObject objectToInteractWith;
     [SerializeField] private AudioClip audioClip;
-    
-    private bool hasBeenInteracted = false;
     
     private void Awake()
     {
         slider.value = 0;
         slider.maxValue = sliderGoal;
+        miniGameobject.SetActive(true);
+    }
+
+    private void Start()
+    {
+        checkState.ActivateRepeatedInputMap();
+        Debug.Log("activated Repeated Map");
     }
 
     // Update is called once per frame
@@ -44,23 +50,14 @@ public class RepeatedInput : MonoBehaviour, IInteraction
 
         slider.value -= sliderReduction; // tried with *Time.deltaTime but unable to make it work. Cheesed it by having high sliderGoal + Increase values
     }
-    
-    public void Interact()
-    {
-        miniGameobject.SetActive(true);
-        checkState.ActivateRepeatedInputMap();
-    //    spaceButton.interactable = false;
-    }
-
-    public bool IsInteractable()
-    {
-        return !hasBeenInteracted;
-    }
 
     public void IncreaseSliderValue(InputAction.CallbackContext context)
     {
+        Debug.Log("Entered the IncreaseSliderValue"); 
+        
         if (miniGameobject.activeSelf == true)
         {
+            Debug.Log("Entered the if IncreaseSliderValue");
             /*
             spaceButton.interactable = true;
             spaceButton.onClick.Invoke();           // Tried to make a color transition but didnt work
@@ -73,7 +70,6 @@ public class RepeatedInput : MonoBehaviour, IInteraction
         
             Debug.Log("Increased slider");
             
-
             if (slider.value >= sliderGoal)
             {
                 EndRepeatedInput();
@@ -84,6 +80,7 @@ public class RepeatedInput : MonoBehaviour, IInteraction
     private void EndRepeatedInput()
     {
         miniGameobject.SetActive(false);
+        previousObject.SetActive(false);
 
         if (objectToInteractWith != null)
         {

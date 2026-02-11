@@ -18,6 +18,11 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private string workAroundTrigger;
     [SerializeField] private bool needsWorkaroundTrigger;
     
+    [Header("Player Animation")]
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private bool triggerPlayer;
+    [SerializeField] private string triggerPlayerName;
+    
     [Header("Scene Management")]
     [SerializeField] private string sceneToLoad;
 
@@ -50,6 +55,12 @@ public class TriggerDialogue : MonoBehaviour
         }
         animator.SetTrigger(animTrigger);
         yield return new WaitForSeconds(animDuraton);
+        
+        if (triggerPlayer)
+        {
+            playerAnimator.SetTrigger(triggerPlayerName);
+        }
+        
         gameObject.SetActive(false);
         checkState.ActivatePlayerMap();
     }

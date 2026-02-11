@@ -45,6 +45,9 @@ public class CheckState : MonoBehaviour
 
     public void ActivateItemMap()
     {
+        animationMap.Disable();
+        dialogueMap.Disable();
+        repeatedInputMap.Disable();
         playerMap.Disable();
         itemMap.Enable();
     }

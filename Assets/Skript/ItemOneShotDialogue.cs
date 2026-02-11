@@ -1,8 +1,11 @@
 using System;
 using UnityEngine;
 
-public class ItemDialogue : MonoBehaviour, IInteraction
+public class ItemOneShotDialogue : MonoBehaviour, IInteraction
 {
+    // Used for the beer interaction
+    // We have a dialog pop up and then disable the item
+    
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private TextAsset textAsset;
     [SerializeField] private QuestMain questMain;

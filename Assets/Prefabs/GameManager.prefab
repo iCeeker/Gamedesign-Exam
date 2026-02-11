@@ -200,8 +200,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb443b864fa63e649b86b67c88c3587a, type: 2}
   - {fileID: 11400000, guid: c154b070fb9e87b4c86a35bafe0a364a, type: 2}
   - {fileID: 11400000, guid: bb68f6645bc30bb4d87d0ba399cbb080, type: 2}
+  - {fileID: 11400000, guid: 220b9e0124e48994283b55bbcb102304, type: 2}
+  - {fileID: 11400000, guid: 0b9832a6e669aef4ea8cd26ca7e104c6, type: 2}
+  - {fileID: 11400000, guid: 985e75682913c5044a90ffc9b8f8b1ee, type: 2}
   questDescriptionTMP: {fileID: 0}
   QuestGameObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -419,6 +425,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 2c1e52dc-38ca-4697-8c86-ab30341ef069
     m_ActionName: 'MiniGame/CloseApplication[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fc29977f-e148-4e51-a0ad-23ac72385004
+    m_ActionName: Animation/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
