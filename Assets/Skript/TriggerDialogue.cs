@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TriggerDialogue : MonoBehaviour
 {
+    [Header("GameObject")]
+    [SerializeField] private bool disableThis;
+    
     [Header("Dialogue")]
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private TextAsset textAsset;
@@ -30,6 +33,11 @@ public class TriggerDialogue : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            if (disableThis)
+            {
+                gameObject.SetActive(false);
+            }
+            
             DialogueManager.GetInstance().StartDialogue(textAsset);
         }
     }

@@ -13,6 +13,7 @@ public class CheckState : MonoBehaviour
 
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private GameObject questBox;
 
     private InputActionMap dialogueMap;
     private InputActionMap playerMap;
@@ -34,6 +35,7 @@ public class CheckState : MonoBehaviour
     {
         dialogueMap.Enable();
         playerMap.Disable();
+        
     }
 
     public void ActivatePlayerMap()
@@ -41,10 +43,14 @@ public class CheckState : MonoBehaviour
         playerMap.Enable();
         dialogueMap.Disable();
         repeatedInputMap.Disable();
+        
+        questBox.SetActive(true);
     }
 
     public void ActivateItemMap()
     {
+        questBox.SetActive(false);
+        
         animationMap.Disable();
         dialogueMap.Disable();
         repeatedInputMap.Disable();
@@ -54,6 +60,8 @@ public class CheckState : MonoBehaviour
 
     public void ActivateRepeatedInputMap()
     {
+        questBox.SetActive(false);
+        
         playerMap.Disable();
         dialogueMap.Disable();
         itemMap.Disable();
@@ -62,6 +70,8 @@ public class CheckState : MonoBehaviour
     
     public void ActivateAnimationMap()
     {
+        questBox.SetActive(false);
+        
         playerMap.Disable();
         dialogueMap.Disable();
         itemMap.Disable();

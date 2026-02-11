@@ -21,6 +21,11 @@ public class ItemInteraction : MonoBehaviour, IInteraction
     [SerializeField] private bool loadsScene;
     [Tooltip("Choose which Scene you want to load. WARNING: Case Sensitive")]
     [SerializeField] private string sceneName;
+
+    [Header("Audio")] 
+    [SerializeField] private bool playAudio;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip audioClip;
     
     [Header("Dialogue Options")]
     [SerializeField] DialogueManager dialogueManager;
@@ -37,7 +42,7 @@ public class ItemInteraction : MonoBehaviour, IInteraction
     [Header("State Logic")]
     [SerializeField] private CheckState checkState;
 
-    [Header("Journal")] 
+    [Header("Keypad")] 
     [SerializeField] private bool hasKeypad;
     [SerializeField] private KeypadLogic keypadGameObject;
     
@@ -58,19 +63,21 @@ public class ItemInteraction : MonoBehaviour, IInteraction
                 button.SetActive(true);
             }
             keypadGameObject.errorCode.SetActive(false);
+            PlayAudio();
         }
-        
         
         Debug.Log("Has Been interacted");
         
         if (hasDialogue && !isAQuest && interactedItem == null) // trigger if only has a dialogue
         {
+            PlayAudio();
             Debug.Log("Has Dialogue");
             dialogueManager.StartDialogue(textAsset);
         }
 
         if (hasDialogue && isAQuest && interactedItem == null) // trigger when it has a dialogue and is a quest
         {
+            PlayAudio();
             Debug.Log("Has Dialogue and is a quest");
             dialogueManager.StartDialogue(textAsset);
             questMain.CompleteQuest();
@@ -78,12 +85,15 @@ public class ItemInteraction : MonoBehaviour, IInteraction
 
         if (loadsScene) // trigger to load a scene
         {
+            PlayAudio();
             Debug.Log("Loading scene");
             SceneManager.LoadScene(sceneName);
         }
         
         if (interactedItem != null && hasDialogue) // trigger when we want a dialogue first and then interact with the item
         {
+            Debug.Log("Its that");
+            PlayAudio();
             if (opensDialogueFirst)
             {
                 Debug.Log("Has Dialogue and item");
@@ -104,11 +114,12 @@ public class ItemInteraction : MonoBehaviour, IInteraction
                 
                 StartCoroutine(OpenItemBefore());
             }
-          
         }
         
         if (interactedItem != null && !hasDialogue) // trigger if we only want to interact with it
         {
+            Debug.Log("Its this");
+            
             if (interactionIcon.activeSelf)
             {
                 interactionIcon.SetActive(false);
@@ -119,6 +130,38 @@ public class ItemInteraction : MonoBehaviour, IInteraction
                 checkState.ActivateItemMap();
             }
         }
+        
+        if (interactedItem != null && hasDialogue) // trigger when we want a dialogue first and then interact with the item
+        {
+            if (isAQuest)
+            {
+                questMain.CompleteQuest();
+            }
+            
+            PlayAudio();
+            if (opensDialogueFirst)
+            {
+                Debug.Log("Has Dialogue and item");
+                dialogueManager.StartDialogue(textAsset);
+            
+                StartCoroutine(OpenItemAfter());
+            }
+            else
+            {
+                if (interactionIcon.activeSelf)
+                {
+                    interactionIcon.SetActive(false);
+                }
+                
+                questUI.SetActive(false); 
+                interactedItem.SetActive(true);
+                checkState.ActivateItemMap();
+                
+                StartCoroutine(OpenItemBefore());
+            }
+        }
+        
+        
         else { return; }
     }
 
@@ -137,13 +180,19 @@ public class ItemInteraction : MonoBehaviour, IInteraction
         interactedItem.SetActive(true);
         checkState.ActivateItemMap();
     }
-    
-    
 
     private IEnumerator OpenItemBefore()
     {
         yield return new WaitUntil( () => interactedItem.activeSelf == false);
      
         dialogueManager.StartDialogue(textAsset);
+    }
+
+    private void PlayAudio()
+    {
+        if (playAudio)
+        {
+            audioSource.PlayOneShot(audioClip);
+        }
     }
 }

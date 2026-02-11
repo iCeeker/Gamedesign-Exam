@@ -69,6 +69,7 @@ public class QuestMain : MonoBehaviour
 
     private void Update() // temp check, need to implement a way that it doesn't check every frame if we complete a quest
     {
+        
         SetActiveQuest();
     }
     

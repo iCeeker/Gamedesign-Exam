@@ -8,7 +8,9 @@ public class CollectionTracker : MonoBehaviour
     [SerializeField] private int requiredNailAmount;
     [SerializeField] private int requiredHammerAmount;
 
+    [SerializeField] private GameObject[] blockingGameObjects;
     [SerializeField] private GameObject barrierGameObject;
+    [SerializeField] private GameObject bridge;
     [SerializeField] private QuestMain questMain;
     
     public bool meetsRequirements;
@@ -42,7 +44,13 @@ public class CollectionTracker : MonoBehaviour
         {
             Debug.Log("Found all items");
             meetsRequirements = true;
+
+            foreach (var blockingObjects in blockingGameObjects)
+            {
+                blockingObjects.gameObject.SetActive(false);
+            }
             
+            bridge.SetActive(true);
             barrierGameObject.SetActive(false);
             questMain.CompleteQuest();
             // Todo: Switch this to an npc 

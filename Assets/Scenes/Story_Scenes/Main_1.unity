@@ -462,6 +462,8 @@ Transform:
   m_Children:
   - {fileID: 1176053052}
   - {fileID: 272203034}
+  - {fileID: 1066325045}
+  - {fileID: 2082303385}
   - {fileID: 814428917}
   m_Father: {fileID: 1728707968}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1526,6 +1528,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &108251180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 584750297592427736, guid: d482d1d6da8ba86489edea43784efade, type: 3}
+  m_PrefabInstance: {fileID: 8619866365535384479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644dfb5f2fd39b444bef465995833c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestMain
 --- !u!1 &145645643
 GameObject:
   m_ObjectHideFlags: 0
@@ -5241,6 +5254,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!82 &613609194 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8368070250244158163, guid: d482d1d6da8ba86489edea43784efade, type: 3}
+  m_PrefabInstance: {fileID: 8619866365535384479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614173509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,6 +6134,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &742636196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1420190130273961060, guid: d482d1d6da8ba86489edea43784efade, type: 3}
+  m_PrefabInstance: {fileID: 8619866365535384479}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05c86adb8ed77d14e93d616952bf6bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectionTracker
 --- !u!1 &746978788
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,7 +6334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &814428917
 Transform:
   m_ObjectHideFlags: 0
@@ -6320,8 +6349,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 497248053}
-  - {fileID: 1066325045}
-  - {fileID: 2082303385}
   m_Father: {fileID: 42776869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &828306546
@@ -7293,11 +7320,11 @@ Transform:
   m_GameObject: {fileID: 1066325044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.131839, y: -1.7048302, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.4801586, y: -0.68397534, z: 0}
+  m_LocalScale: {x: 0.5829004, y: 0.5829004, z: 0.5829004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 814428917}
+  m_Father: {fileID: 42776869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1066325046
 EdgeCollider2D:
@@ -53688,6 +53715,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1988622199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9024889949150089991, guid: 0302978bdf2279d4dbcb97d8346b3860, type: 3}
+  m_PrefabInstance: {fileID: 6319974869168230462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2008334986
 GameObject:
   m_ObjectHideFlags: 0
@@ -61952,11 +61984,11 @@ Transform:
   m_GameObject: {fileID: 2082303384}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.09715, y: 0.9881698, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.4599384, y: 0.8857755, z: 0}
+  m_LocalScale: {x: 0.5829004, y: 0.5829004, z: 0.5829004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 814428917}
+  m_Father: {fileID: 42776869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &2082303386
 EdgeCollider2D:
@@ -62617,63 +62649,111 @@ PrefabInstance:
     - target: {fileID: 39211338579173176, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: questMain
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 108251180}
+    - target: {fileID: 1264181622178317386, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 1988622199}
     - target: {fileID: 1264181622178317386, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: questMain
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 108251180}
+    - target: {fileID: 1264181622178317386, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: textAsset
+      value: 
+      objectReference: {fileID: 4900000, guid: 88f2a28e4c8871642b5b520b5dbcfcf9, type: 3}
     - target: {fileID: 1264181622178317386, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: checkState
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 798254462}
     - target: {fileID: 1264181622178317386, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: dialogueManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1576147380}
     - target: {fileID: 1264181622178317386, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: interactionIcon
       value: 
       objectReference: {fileID: 299111343}
     - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 1988622199}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: isAQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: questMain
+      value: 
+      objectReference: {fileID: 108251180}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: sceneName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: textAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: checkState
       value: 
+      objectReference: {fileID: 798254462}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: loadsScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: hasDialogue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: dialogueManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1576147380}
     - target: {fileID: 2214466958334198077, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: interactionIcon
       value: 
       objectReference: {fileID: 299111343}
     - target: {fileID: 3246364487486399717, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 1988622199}
+    - target: {fileID: 3246364487486399717, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: questMain
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 108251180}
     - target: {fileID: 3246364487486399717, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: checkState
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 798254462}
     - target: {fileID: 3246364487486399717, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: dialogueManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1576147380}
     - target: {fileID: 3246364487486399717, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: interactionIcon
       value: 
       objectReference: {fileID: 299111343}
     - target: {fileID: 3471727534417315892, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: questUI
+      value: 
+      objectReference: {fileID: 1988622199}
+    - target: {fileID: 3471727534417315892, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: questMain
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 108251180}
+    - target: {fileID: 3471727534417315892, guid: c116a110da2688b49be221c39f090a34, type: 3}
+      propertyPath: textAsset
+      value: 
+      objectReference: {fileID: 4900000, guid: 6dc5f3bcd262bda42abf03a08f2d3c93, type: 3}
     - target: {fileID: 3471727534417315892, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: checkState
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 798254462}
     - target: {fileID: 3471727534417315892, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: dialogueManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1576147380}
     - target: {fileID: 3471727534417315892, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: interactionIcon
       value: 
@@ -62725,11 +62805,11 @@ PrefabInstance:
     - target: {fileID: 4542505533885484695, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: tracker
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 742636196}
     - target: {fileID: 4542505533885484695, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 613609194}
     - target: {fileID: 6661722105070130207, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: player
       value: 
@@ -62737,23 +62817,23 @@ PrefabInstance:
     - target: {fileID: 6661722105070130207, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: questMain
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 108251180}
     - target: {fileID: 6919255139583748783, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: tracker
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 742636196}
     - target: {fileID: 6919255139583748783, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 613609194}
     - target: {fileID: 6951903598154483314, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: tracker
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 742636196}
     - target: {fileID: 6951903598154483314, guid: c116a110da2688b49be221c39f090a34, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 613609194}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62803,6 +62883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ---Systems---
       objectReference: {fileID: 0}
+    - target: {fileID: 1420190130273961060, guid: d482d1d6da8ba86489edea43784efade, type: 3}
+      propertyPath: bridge
+      value: 
+      objectReference: {fileID: 814428916}
     - target: {fileID: 1420190130273961060, guid: d482d1d6da8ba86489edea43784efade, type: 3}
       propertyPath: barrierGameObject
       value: 
@@ -62855,6 +62939,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.54832745
       objectReference: {fileID: 0}
+    - target: {fileID: 4353977796793725739, guid: d482d1d6da8ba86489edea43784efade, type: 3}
+      propertyPath: questBox
+      value: 
+      objectReference: {fileID: 1988622199}
     - target: {fileID: 5180901306572562098, guid: d482d1d6da8ba86489edea43784efade, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
